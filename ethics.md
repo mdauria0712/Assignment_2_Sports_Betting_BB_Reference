@@ -7,7 +7,7 @@ Contract Law – Terms of Use act as a contract; we followed their restrictions 
 Copyright Law (17 U.S.C. § 101 et seq.) – Facts (like box scores) are not copyrightable per Feist Publ’ns v. Rural Tel. Serv., 499 U.S. 340 (1991), but the site’s compilation/formatting may be protected. We used the data solely for educational purposes and not for republication.
 Case Precedent: hiQ Labs v. LinkedIn, 938 F.3d 985 (9th Cir. 2019) ruled that scraping publicly available web pages does not constitute CFAA “hacking,” provided no circumvention of authentication occurs — supporting our use case.
 2. Impact on Website Operations
-We scraped <10 pages total for this project, well under the 20 req/min limit.
+We scraped 1 page for this project, well under the 20 req/min limit they set.
 We inserted randomized delays (time.sleep()) between requests and cached data to avoid re-scraping.
 Result: negligible server impact, no risk of degrading human users’ experience, and full compliance with site guidance.
 3. Privacy Considerations
