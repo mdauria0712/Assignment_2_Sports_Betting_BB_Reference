@@ -7,21 +7,15 @@ Contract Law – Terms of Use act as a contract; we followed their restrictions 
 Copyright Law (17 U.S.C. § 101 et seq.) – Facts (like box scores) are not copyrightable per Feist Publ’ns v. Rural Tel. Serv., 499 U.S. 340 (1991), but the site’s compilation/formatting may be protected. We used the data solely for educational purposes and not for republication.
 Case Precedent: hiQ Labs v. LinkedIn, 938 F.3d 985 (9th Cir. 2019) ruled that scraping publicly available web pages does not constitute CFAA “hacking,” provided no circumvention of authentication occurs — supporting our use case.
 2. Impact on Website Operations
-We scraped 1 page for this project, well under the 20 req/min limit they set.
+We scraped one page for this project, well under the 20 requests per minute limit they set.
 We inserted randomized delays (time.sleep()) between requests and cached data to avoid re-scraping.
 Result: negligible server impact, no risk of degrading human users’ experience, and full compliance with site guidance.
 3. Privacy Considerations
-The scraped data contains only publicly available sports statistics — no personal user data or PII.
-No accounts, cookies, or login-required information were accessed.
-If in the future we collected user data (e.g. picks, betting behavior), we would comply with GDPR (Reg. EU 2016/679) and CCPA (Cal. Civ. Code § 1798.100 et seq.), including anonymization and user consent.
+The scraped data contains only publicly available sports statistics — no personal user data. 
 4. Our Ethical Framework
 We applied these principles throughout the project:
 Respect for Terms of Use – Stayed below rate limits, did not create a competing product, and cited the data source.
-Minimize Harm – Used caching, throttling, and off-peak scraping to reduce load.
-Transparency – Documented scraping methodology, legal considerations, and limitations in our final report.
-Educational Intent – The project is for a university course, not for profit or public distribution.
-Future Awareness – Acknowledge that a real public-facing product would require a commercial license or API agreement.
+Transparency – Documented scraping methodology, legal considerations, and the respect of sports reference as they provide a free-to-use and helpful service for sports fans.  
+Educational Intent – The project is for a university course, not for profit or public distribution, just as a hypothetical company for academic purposes. We acknowledge the additional steps and requirements needed to make this company real. 
 5. Alternative Approaches Considered
-Official Data Providers (Sportradar, Stats Perform): Provide commercial-grade feeds, but are expensive and out of scope for a school project.
-Public APIs (balldontlie, MLB-StatsAPI): Freely available and designed for developers, but lacked some historical/statistical depth needed for our analysis.
-Manual CSV Downloads: Basketball-Reference offers downloadable CSVs for some tables — we considered this but included scraping to meet the course requirement to demonstrate automated collection.
+We looked into using different sports data websites, but many of them prohibited web scraping policies and required either payment or permission to allow web scraping access.   
